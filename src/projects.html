@@ -9,6 +9,7 @@
   <body>
     <div id="navbar"></div>
     <div id="projects"></div>
+    <div id="footer"></div>
     <script>
       async function loadComponent(url, targetId) {
       try {
@@ -22,6 +23,7 @@
       document.addEventListener('DOMContentLoaded', () => {
       loadComponent('./components/navbar/index.html', 'navbar');
       loadComponent('./components/projects/index.html', 'projects');
+      loadComponent('./components/footer/index.html', 'footer');
       });
     </script>
   </body>
