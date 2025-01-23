@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <div
+      class="flex flex-col md:flex-row min-h-screen items-center justify-center "
+    >
+      <!-- Left Section -->
+      <div class="md:w-1/2 bg-white p-8 md:p-16">
+        <h1 class="text-4xl font-bold mb-4">Get in touch</h1>
+        <p class="text-gray-600 mb-6">Parichart Nongkae(Pumpui)</p>
+        <div class="space-y-4">
+          <p class="flex items-center text-gray-600">
+            <svg
+              class="w-6 h-6 mr-2 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 20h5V10a1 1 0 00-1-1h-5m-6 0H3a1 1 0 00-1 1v10h5m6-16h6a2 2 0 012 2v16a2 2 0 01-2 2h-6a2 2 0 01-2-2V6a2 2 0 012-2z"
+              ></path>
+            </svg>
+            169 Long Had Bangsaen Road, Saensuk Subdistrict, Muang District,
+            Chonburi Province 20131
+          </p>
+          <p class="flex items-center text-gray-600">
+            <svg
+              class="w-6 h-6 mr-2 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 10l7-7m0 0l7 7m-7-7v18"
+              ></path>
+            </svg>
+            085-232-xxxx
+          </p>
+          <p class="flex items-center text-gray-600">
+            <svg
+              class="w-6 h-6 mr-2 text-gray-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 12h2a2 2 0 012 2v4a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2m-4 0H8a2 2 0 01-2-2v-4a2 2 0 012-2h4a2 2 0 012 2v2m4-4V4a2 2 0 00-2-2H8a2 2 0 00-2 2v4"
+              ></path>
+            </svg>
+            66160254@go.buu.ac.th
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="md:w-1/2 bg-gray-100 p-8 md:p-16">
+        <form action="#" method="POST" class="space-y-6">
+          <div class="flex gap-4">
+            <div class="w-1/2">
+              <label
+                for="first-name"
+                class="block text-sm font-medium text-gray-700"
+                >First name</label
+              >
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="Enter your first name"
+                pattern="[A-Za-z]+"
+                title="First name should only contain letters"
+              />
+            </div>
+            <div class="w-1/2">
+              <label
+                for="last-name"
+                class="block text-sm font-medium text-gray-700"
+                >Last name</label
+              >
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                placeholder="Enter your last name"
+                pattern="[A-Za-z]+"
+                title="Last name should only contain letters"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-700"
+              >Phone number</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+              pattern="[0-9]*"
+              inputmode="numeric"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-pink-400 text-white py-3 px-6 rounded-md hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          >
+            Send message
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
