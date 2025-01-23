@@ -13,18 +13,18 @@
     <div id="footer"></div>
     <script>
       async function loadComponent(url, targetId) {
-      try {
-      const response = await fetch(url);
-      const html = await response.text();
-      document.getElementById(targetId).innerHTML = html;
-      } catch (error) {
-      console.error(`Error loading ${url}:`, error);
+        try {
+          const response = await fetch(url);
+          const html = await response.text();
+          document.getElementById(targetId).innerHTML = html;
+        } catch (error) {
+          console.error(`Error loading ${url}:`, error);
+        }
       }
-      }
-      document.addEventListener('DOMContentLoaded', () => {
-      loadComponent('./components/navbar/index.html', 'navbar');
-      loadComponent('./components/projects/index.html', 'projects');
-      loadComponent('./components/footer/index.html', 'footer');
+      document.addEventListener("DOMContentLoaded", () => {
+        loadComponent("./components/navbar/index.html", "navbar");
+        loadComponent("./components/projects/index.html", "projects");
+        loadComponent("./components/footer/index.html", "footer");
       });
     </script>
   </body>
