@@ -7,50 +7,111 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <section>
-      <div class="text-center">
+    <section class="md-16">
+      <div class="text-center mt-16">
         <!-- ข้อความ -->
-        <h4
-          class="text-2xl font-bold dark:text-dark mt-5 sm:text-xl md:text-3xl"
-        >
+        <h4 class="text-6xl font-bold dark:text-dark">
           Skills
         </h4>
 
-        <p class="text-2xl text-gray-900 dark:text-black mt-[100px]">
+        <hr class="border-t-2 border-black w-[40%] mb-8 mx-auto mt-16 md-16" />
+
+        <p class="font-semibold text-2xl text-gray-900 dark:text-black mt-16">
           Technical Skills
         </p>
 
-        <div class="grid grid-cols-1 gap-0.5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0.5 mt-5">
-         
-            <div class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto mt-5">
-                <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/GameBoy_HD.png" alt="image description"/>
-                <figcaption class="mt-2 text-lg text-center text-black">
-                    <p>I can use Blander</p>
-                  </figcaption>
-                </div>
+        <p class="mt-4 text-xl text-gray-600 mb-8 leading-relaxed text-left px-20 indent-8">
+          My technical skills include programming, 3D modeling with Blender, UI design with Figma, web development, and database management, enabling <br>me to deliver high-quality, innovative solutions.
+        </p>
 
-              <div class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto mt-5">
-                    <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/k-pop.png" alt="image description"/>
-                    <figcaption class="mt-2 text-lg text-center text-black">
-                        <p>I can use figma</p>
-                      </figcaption>
-                    </div>
-              
-              <div class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto mt-5">
-                    <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/moodeng.png" alt="image description"/>
-                <figcaption class="mt-2 text-lg text-center text-black">
-                  <p>I can write web pages</p>
-                </figcaption>
-              </div>
+       
 
-              <div class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto mt-5">
-                <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/minibid.jpg" alt="image description"/>
+        <div
+          class="mt-10 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 mt-10 px-5 sm:px-10">
+          <div
+            class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/GameBoy_HD.png" alt="image description"/>
+            <figcaption class="mt-2 text-lg text-center text-black">
+              <p>I can use Blender</p>
+            </figcaption>
+          </div>
+
+          <div
+            class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/k-pop.png" alt="image description"/>
+            <figcaption class="mt-2 text-lg text-center text-black">
+              <p>I can use Figma</p>
+            </figcaption>
+          </div>
+
+          <div
+            class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/moodeng.png" alt="image description" />
+            <figcaption class="mt-2 text-lg text-center text-black">
+              <p>I can write web pages</p>
+            </figcaption>
+          </div>
+
+          <div
+            class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-lg" >
+            <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/minibid.jpg" alt="image description"
+            />
             <figcaption class="mt-2 text-lg text-center text-black">
               <p>I can write database</p>
             </figcaption>
           </div>
-         
+        </div>
       </div>
     </section>
+
+    <hr class="border-t-2 border-black w-[95%] mb-8 mx-auto mt-32 md-16" />
+
+    <section class="mt-16">
+      <p class="text-center font-semibold text-2xl text-gray-900 dark:text-black mt-6">
+        Soft Skills
+      </p>
+
+    <p class="mt-4 text-xl text-gray-600 mb-8 leading-relaxed text-left px-20 indent-8">
+      My additional skills include sales, video editing, artistic creation, and presentation. I communicate ideas effectively, engage audiences, connect with customers, and create visually appealing content.
+    </p>
+
+    <div
+      class="mt-10 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 mt-10 px-5 sm:px-10">
+      <div
+        class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+        <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/edit.jpg" alt="image description"/>
+        <figcaption class="mt-2 text-lg text-center text-black">
+          <p>I can edit video.</p>
+        </figcaption>
+      </div>
+
+      <div
+        class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+        <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/art.jpg" alt="image description"/>
+        <figcaption class="mt-2 text-lg text-center text-black">
+          <p>I can make art</p>
+        </figcaption>
+      </div>
+
+      <div
+        class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+        <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/pre.jpg" alt="image description" />
+        <figcaption class="mt-2 text-lg text-center text-black">
+          <p>I can present work</p>
+        </figcaption>
+      </div>
+
+      <div
+        class="h-[250px] w-[350px] rounded-lg bg-pink-400 mx-auto transition-transform duration-300 hover:scale-105 hover:shadow-lg" >
+        <img class="rounded-lg w-full h-full object-cover" src="/src/components/skills/seal.jpg" alt="image description"
+        />
+        <figcaption class="mt-2 text-lg text-center text-black">
+          <p>I can sell things</p>
+        </figcaption>
+      </div>
+    </div>
+  </div>
+</section>
+
   </body>
 </html>
